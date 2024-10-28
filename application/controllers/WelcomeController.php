@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class WelcomeController extends MY_Controller {
+class WelcomeController extends CI_Controller {
 
 	function __construct() {
 		parent::__construct();
@@ -9,10 +9,8 @@ class WelcomeController extends MY_Controller {
 
 	public function index()
 	{
-		$this->template->set('title_page', 'About me');
-		$data['title'] = 'My foo page';
 
-		$this->template->load('layout/master', 'dashboard/index', $data);
+		$this->load->view('main');
 
 
 		//var_dump($_SESSION);
