@@ -58,5 +58,7 @@ $route['auth']['get'] = 'AuthController/index';
 $route['auth/logout']['get'] = 'AuthController/logout';
 $route['auth']['post'] = 'AuthController/store';
 
+$route['dashboard']['get'] = 'DashboardController/index';
+
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

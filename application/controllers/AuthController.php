@@ -13,7 +13,7 @@ class AuthController extends CI_Controller {
 	{
 		if($this->aauth->attempt($this->input->post('email'),$this->input->post('password')))
 		{
-			redirect(base_url());
+			redirect(base_url('dashboard'));
 		}
 
 		$this->load->view('auth/login');
