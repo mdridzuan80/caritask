@@ -5,20 +5,13 @@ class DashboardController extends MY_Controller {
 
 	function __construct() {
 		parent::__construct();
+		
+		# Set Content Header
+		$this->template->set('contentHeader', 'Dashboard');
 	}
 
 	public function index()
 	{
-
-		$this->template->set('title_page', 'About me');
-		$data['title'] = 'My foo page';
-
-		$this->template->load('layout/master', 'dashboard/index', $data);
-
-
-
-		//var_dump($_SESSION);
-		//$this->load->view('welcome_message');
-		//$user = $this->aauth->attempt('demo@demo.com','123');
+		$this->template->load('layout/master', 'dashboard/index');
 	}
 }
