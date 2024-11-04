@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,12 +10,12 @@
         <meta content="" name="description">
 
         <!-- Google Web Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com" rel="preconnect">
+        <link href="https://fonts.gstatic.com" crossorigin rel="preconnect">
         <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&family=Rubik:wght@400;500&display=swap" rel="stylesheet"> 
 
         <!-- Icon Font Stylesheet -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
         <!-- Libraries Stylesheet -->
@@ -44,28 +45,27 @@
         <!-- Navbar & Hero Start -->
         <div class="container-fluid header position-relative overflow-hidden p-0">
             <nav class="navbar navbar-expand-lg fixed-top navbar-light px-4 px-lg-5 py-3 py-lg-0">
-                <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-                  <img src="<?= base_url('assets/images/logo.png') ?>" alt="Logo" style="height: 75px;"> <!-- Adjust the height as needed -->
-              </a>
+                <a href="<?= base_url() ?>" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+                  <img src="<?= base_url('assets/images/logo.png') ?>" alt="Logo" style="height: 75px;"> <!-- Adjust the height as needed --></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Services</a>
+                        <a href="<?= base_url() ?>" class="nav-item nav-link active">Home</a>
+                        <a href="<?= base_url() ?>about" class="nav-item nav-link">About</a>
+                        <a href="<?= base_url() ?>Services" class="nav-item nav-link">Services</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Book Now</a>
                             <div class="dropdown-menu m-0">
-                                <a href="Cleaning Service.html" class="dropdown-item">Cleaning Service</a>
-                                <a href="HomeRepair.html" class="dropdown-item">Home Repair</a>
-                                <a href="Fitness coaching.html" class="dropdown-item">Fitness Coaching</a>
-                                <a href="PetCare.html" class="dropdown-item">Pet Care</a>
+                                <a href="<?= base_url() ?>Cleaning_Service" class="dropdown-item">Cleaning Service</a>
+                                <a href="<?= base_url() ?>Home_Repair" class="dropdown-item">Home Repair</a>
+                                <a href="<?= base_url() ?>Fitness_Coaching" class="dropdown-item">Fitness Coaching</a>
+                                <a href="<?= base_url() ?>Pet_Care" class="dropdown-item">Pet Care</a>
                                 <!-- a href="404.html" class="dropdown-item">404 Page</a -->
                             </div>
                         </div>
-                        <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                        <a href="<?= base_url() ?>contact" class="nav-item nav-link">Contact Us</a>
                     </div>
                     <a href="<?=base_url('auth') ?>" class="btn btn-light border border-primary rounded-pill text-primary py-2 px-4 me-4">Log In</a>
                     <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4">Sign Up</a>
@@ -112,7 +112,7 @@
                         <h1 class="display-5 mb-4">CariTask – Bringing Ease to Your Everyday Life</h1>
                         <p class="mb-4">At <b>CariTask,</b> we believe that life’s most important moments shouldn’t be weighed down by everyday tasks. That's why we've created a platform that connects you with reliable experts who can help get things done—quickly, effortlessly, and with a personal touch. Whether you're juggling work, family, or simply trying to make time for yourself, CariTask is your go-to solution for everything from home repairs and fitness coaching to pet care and cleaning services.
                         </p>
-                        <a href="about.html" class="btn btn-primary rounded-pill py-3 px-5">About More</a>
+                        <a href="<?= base_url() ?>about" class="btn btn-primary rounded-pill py-3 px-5">About More</a>
                     </div>
                 </div>
             </div>
@@ -133,52 +133,52 @@
                     <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="service-item text-center rounded p-4">
                             <div class="service-icon d-inline-block bg-light rounded p-4 mb-4">
-                                <img src="<?= base_url('assets/images/repair-tools.png') ?>" class="img-icon" alt="">
+                                <img src="<?= base_url('assets/images/repair-tools.png') ?>" class="img-fluid" alt="">
                             </div>
                             <div class="service-content">
                                 <h4 class="mb-4">Home Repair</h4>
                                 <p class="mb-4">From Minor Fixes To Major Renovations,<br> Our Skilled Technicians are Here to Help You.
                                 </p>
-                                <a href="HomeRepair.html" class="btn btn-light rounded-pill text-primary py-2 px-4">Read More</a>
+                                <a href="HomeRepair.php" class="btn btn-light rounded-pill text-primary py-2 px-4">Read More</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="service-item text-center rounded p-4">
                             <div class="service-icon d-inline-block bg-light rounded p-4 mb-4">
-                            <img src="<?= base_url('assets/images/trainer.png') ?>" class="img-icon" alt="">
+                            <img src="<?= base_url('assets/images/trainer.png') ?>" class="img-fluid" alt="">
                             </div>
                             <div class="service-content">
                                 <h4 class="mb-4">Fitness coaching </h4>
                                 <p class="mb-4">We Provide you with the Support & Motivation You Need to Lead a Healthier & Active Lifestyle.
                                 </p>
-                                <a href="Fitness coaching.html" class="btn btn-light rounded-pill text-primary py-2 px-4">Read More</a>
+                                <a href="Fitness coaching.php" class="btn btn-light rounded-pill text-primary py-2 px-4">Read More</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="service-item text-center rounded p-4">
                             <div class="service-icon d-inline-block bg-light rounded p-4 mb-4">
-                                 <img src="<?= base_url('images/world-animal-day.png') ?>" class="img-icon" alt="">
+                                 <img src="<?= base_url('assets/images/world-animal-day.png') ?>" class="img-fluid" alt="">
                             </div>
                             <div class="service-content">
-                                <h4 class="mb-4">Pet care</h4>
-                                <p class="mb-4">From Grooming & Boarding to Medical Care & Training, We Offer a Wide Range Of Services
+                                <h4 class="mb-4"><b>Pet care</b></h4>
+                                <p class="mb-4">From Grooming & Boarding to Medical Care & Training, We Offer a Wide Range Of Services.
                                 </p>
-                                <a href="PetCare.html" class="btn btn-light rounded-pill text-primary py-2 px-4">Read More</a>
+                                <a href="PetCare.php" class="btn btn-light rounded-pill text-primary py-2 px-4">Read More</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
                         <div class="service-item text-center rounded p-4">
                             <div class="service-icon d-inline-block bg-light rounded p-4 mb-4">
-                                <img src="<?= base_url('assets/images/housekeeping.png') ?>" class="img-icon" alt="">
+                                <img src="<?= base_url('assets/images/housekeeping.png') ?>" class="img-fluid" alt="">
                             </div>
                             <div class="service-content">
                                 <h4 class="mb-4">Cleaning Service</h4>
-                                <p class="mb-4">Whether you need a one-time deep clean or regular maintenance, Caritask Cleaning Services has you covered
+                                <p class="mb-4">Whether you need a one-time deep clean or regular maintenance, Caritask Cleaning Services has you covered.
                                 </p>
-                                <a href="Cleaning Service.html" class="btn btn-light rounded-pill text-primary py-2 px-4">Read More</a>
+                                <a href="Cleaning Service.php" class="btn btn-light rounded-pill text-primary py-2 px-4">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -295,7 +295,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.1s">
-                        <h4 class="text-primary">Fearutes</h4>
+                        <h4 class="text-primary">Customer Experience</h4>
                         <h1 class="display-5 mb-4">Happy Customers</h1>
                         <p class="mb-4"> No more frantic Googling or last-minute stress. Just a simple, user-friendly platform that brings trusted professionals right to your door.
 						</p>
@@ -402,7 +402,7 @@
                 <div class="row g-5 justify-content-center">
                     <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="price-item bg-light rounded text-center">
-                            <div class="text-center text-dark border-bottom d-flex flex-column justify-content-center p-4" style="width: 100%; height: 160px;">
+                            <div class="text-center text-secondary border-bottom d-flex flex-column justify-content-center p-4" style="width: 100%; height: 160px;">
                                 <p class="fs-2 fw-bold text-uppercase mb-0">Select <br> Service</p>
                                 <div class="d-flex justify-content-center">
                                     <strong class="align-self-start"></strong>
@@ -519,7 +519,77 @@
             </div>
         <!-- Pricing End -->
         </div>
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-dark mb-4">Company</h4>
+                            <a href=""> Why CariTask?</a>
+                            <a href=""> Our Features</a>
+                            <a href=""> Our Portfolio</a>
+                            <a href=""> About Us</a>
+                            <a href=""> Our Blog & News</a>
+                            <a href=""> Get In Touch</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-dark">Quick Links</h4>
+                            <a href=""> About Us</a>
+                            <a href=""> Contact Us</a>
+                            <a href=""> Privacy Policy</a>
+                            <a href=""> Terms & Conditions</a>
+                            <a href=""> Our Blog & News</a>
+                            <a href=""> Our Team</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-dark">Services</h4>
+                            <a href=""> All Services</a>
+                            <a href=""> Promotional Emails</a>
+                            <a href=""> Product Updates</a>
+                            <a href=""> Email Marketing</a>
+                            <a href=""> Acquistion Emails</a>
+                            <a href=""> Retention Emails</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-dark">Contact Info</h4>
+                            <a href=""><i class="fa fa-map-marker-alt me-2"></i> 27-1, Jalan PJ1, Taman Pertam Jaya, 75050 Melaka</a>
+                            <a href=""><i class="fas fa-envelope me-2"></i> info@caritask.com.my</a>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-share fa-2x text-secondary me-2"></i>
+                                <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
 
+        
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-md-0">
+                        <span class="text-white"><a href="#"><i class="fas fa-copyright text-light me-2"></i><b>CariTask</b></a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end text-white">
+                        Designed & Maintained By <a href="https://alphabyte.com.my"><b>Alphabyte Technologies (M) Sdn. Bhd.</b></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
        
        
         <!-- Back to Top -->
@@ -535,8 +605,8 @@
     <script src="<?= base_url('assets/lib/counterup/counterup.min.js') ?>"></script>
     <script src="<?= base_url('assets/lib/owlcarousel/owl.carousel.min.js') ?>"></script>
     <script src="<?= base_url('assets/lib/lightbox/js/lightbox.min.js') ?>"></script>
-    
-    <!-- Footer Page -->
+    <script src="<?= base_url('assets/js/main.js') ?>"></script>
+    <!-- Footer Page
     <div id="footer"></div>
     <script>
         fetch('footer.html')
@@ -544,10 +614,10 @@
             .then(data => {
                 document.getElementById('footer').innerHTML = data;
         });
-    </script>
+    </script> -->
 
     <!-- Template Javascript -->
-    <script src="<?= base_url('assets/js/main.js') ?>"></script>
+    
     </body>
 
 </html>
