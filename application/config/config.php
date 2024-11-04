@@ -326,7 +326,7 @@ $config['cache_query_string'] = FALSE;
 | https://codeigniter.com/userguide3/libraries/encryption.html
 |
 */
-$config['encryption_key'] = '';
+$config['encryption_key'] = '23bff4980444bf57989fb3d6530ddb7ac4c4cff335d3d9b074397471bd763ebb';
 
 /*
 |--------------------------------------------------------------------------
