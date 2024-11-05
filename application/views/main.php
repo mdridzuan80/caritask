@@ -65,9 +65,14 @@
 						</div>
 					</div>
 					<a href="<?= base_url() ?>contact" class="nav-item nav-link">Contact Us</a>
+					<?php if (check()) { ?>
+						<a href="<?= site_url('dashboard') ?>" class="nav-item nav-link">Dashboard</a>
+					<?php } ?>
 				</div>
-				<a href="<?= base_url('auth') ?>" class="btn btn-light border border-primary rounded-pill text-primary py-2 px-4 me-4">Log In</a>
-				<a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4">Sign Up</a>
+				<?php if (!check()) { ?>
+					<a href="<?= site_url('auth') ?>" class="btn btn-light border border-primary rounded-pill text-primary py-2 px-4 me-4">Log In</a>
+					<a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4">Sign Up</a>
+				<?php } ?>
 			</div>
 		</nav>
 
