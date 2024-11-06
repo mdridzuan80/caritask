@@ -60,5 +60,10 @@ $route['auth']['post'] = 'AuthController/store';
 
 $route['dashboard']['get'] = 'DashboardController/index';
 
+#roles
+$route['roles']['get'] = 'RolesController/index';
+$route['roles/create']['get'] = 'RolesController/create';
+$route['roles']['post'] = 'RolesController/store';
+
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

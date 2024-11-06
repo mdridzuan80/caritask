@@ -25,6 +25,7 @@
       <p class="login-box-msg">Sign in to start your session</p>
 
       <form action="<?=current_url()?>" method="post">
+				<input type="hidden" name="<?=$csrf['name'];?>" value="<?=$csrf['hash'];?>" />
         <div class="input-group mb-3">
           <input type="email" class="form-control" placeholder="Email" name="email" autocomplete="off">
           <div class="input-group-append">

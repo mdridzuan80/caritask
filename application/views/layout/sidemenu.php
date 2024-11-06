@@ -14,13 +14,40 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="#" class="nav-link">
-			<i class="nav-icon fas fa-tachometer-alt"></i>
+            <a href="<?=base_url('dashboard')?>" class="nav-link">
+							<i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
               </p>
             </a>
           </li>
+					<?php if(hasRole('admin')){ ?>
+					<li class="nav-header">Administrator Menu</li>
+					<li class="nav-item">
+            <a href="#" class="nav-link">
+							<i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                User Mangement
+              </p>
+            </a>
+          </li>
+					<li class="nav-item">
+            <a href="<?=base_url('roles')?>" class="nav-link">
+							<i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Role
+              </p>
+            </a>
+          </li>
+					<li class="nav-item">
+            <a href="#" class="nav-link">
+							<i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Permision
+              </p>
+            </a>
+          </li>
+					<?php }?>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->

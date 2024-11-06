@@ -15,6 +15,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <link rel="stylesheet" href="<?= base_url('/assets/plugins/fontawesome-free/css/all.min.css') ?>">
   <!-- Theme style -->
   <link rel="stylesheet" href="<?= base_url('/assets/css/adminlte.min.css') ?>">
+	<link rel="stylesheet" href="<?= base_url('/assets/plugins/toastr/toastr.min.css') ?>">
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
@@ -27,7 +28,20 @@ scratch. This page gets rid of all links and provides the needed markup only.
 	<?= $sidemenu ?>
 
   <!-- Content Wrapper. Contains page content -->
-	<?= $contents ?>
+	<div class="content-wrapper">
+		<!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0"><?= $contentHeader ?></h1>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+		<?= $contents ?>
+	</div>
 	<!-- /.content-wrapper -->
 
   <!-- Control Sidebar -->
@@ -60,5 +74,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <script src="<?= base_url('/assets/plugins/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
 <!-- AdminLTE App -->
 <script src="<?= base_url('/assets/js/adminlte.min.js') ?>"></script>
+<script src="<?= base_url('/assets/plugins/toastr/toastr.min.js') ?>"></script>
+<?php if(isset($script)){
+	echo $script;
+}?>
 </body>
 </html>
