@@ -8,7 +8,7 @@
                 <h3 class="card-title">Role List</h3>
 				<?php if(hasRole('admin')){ ?>
 				<div class="card-tools">
-					<a type="button" class="btn btn-block btn-primary" href="#"><i class="fas fa-plus"></i> Create Role</a>
+					<a type="button" class="btn btn-block btn-primary" href="<?=base_url('roles/create')?>"><i class="fas fa-plus"></i> Create Role</a>
                 </div>
 				<?php } ?>
               </div>
