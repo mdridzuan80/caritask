@@ -15,6 +15,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <link rel="stylesheet" href="<?= base_url('/assets/plugins/fontawesome-free/css/all.min.css') ?>">
   <!-- Theme style -->
   <link rel="stylesheet" href="<?= base_url('/assets/css/adminlte.min.css') ?>">
+	<link rel="stylesheet" href="<?= base_url('/assets/plugins/toastr/toastr.min.css') ?>">
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
@@ -73,5 +74,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <script src="<?= base_url('/assets/plugins/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
 <!-- AdminLTE App -->
 <script src="<?= base_url('/assets/js/adminlte.min.js') ?>"></script>
+<script src="<?= base_url('/assets/plugins/toastr/toastr.min.js') ?>"></script>
+<?php if(isset($script)){
+	echo $script;
+}?>
 </body>
 </html>
