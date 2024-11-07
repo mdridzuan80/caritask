@@ -11,7 +11,9 @@
 		"source": "https://github.com/bcit-ci/CodeIgniter"
 	},
 	"require": {
-		"php": ">=5.3.7"
+		"php": ">=5.3.7",
+		"nesbot/carbon": "^3.8",
+		"brick/money": "^0.10.0"
 	},
 	"autoload": {
         "psr-4": {

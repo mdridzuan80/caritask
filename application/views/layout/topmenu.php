@@ -27,7 +27,7 @@
           
           <!-- Menu Footer-->
           <li class="user-footer">
-            <a href="<?= base_url('/auth/logout') ?>" class="btn btn-default btn-flat float-right">Sign out</a>
+            <a href="<?= site_url('/auth/logout') ?>" class="btn btn-default btn-flat float-right">Sign out</a>
           </li>
         </ul>
       </li>

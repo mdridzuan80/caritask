@@ -8,10 +8,12 @@ class DashboardController extends MY_Controller {
 		
 		# Set Content Header
 		$this->template->set('contentHeader', 'Dashboard');
+		$this->load->model('task');
 	}
 
 	public function index()
 	{
-		$this->template->load('layout/master', 'dashboard/index');
+		$data['tasks'] = $this->task->all();
+		$this->template->load('layout/master', 'dashboard/index', $data);
 	}
 }
