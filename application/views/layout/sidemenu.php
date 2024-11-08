@@ -2,7 +2,7 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="<?=site_url()?>" class="brand-link">
-      <img src="<?= base_url('/assets/images/AdminLTELogo.png') ?>" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <img src="<?= base_url('/assets/images/clogo.png') ?>" alt="Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light">CariTask</span>
     </a>
 
@@ -32,7 +32,7 @@
             </a>
           </li>
 					<li class="nav-item">
-            <a href="<?=site_url('roles')?>" class="nav-link">
+            <a href="<?=base_url('roles')?>" class="nav-link">
 							<i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Role

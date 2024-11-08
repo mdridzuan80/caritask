@@ -143,7 +143,7 @@
 							<h4 class="mb-4">Home Repair</h4>
 							<p class="mb-4">From Minor Fixes To Major Renovations,<br> Our Skilled Technicians are Here to Help You.
 							</p>
-							<a href="HomeRepair.php" class="btn btn-light rounded-pill text-primary py-2 px-4">Read More</a>
+							<a href="<?= base_url() ?>Home_Repair" class="btn btn-light rounded-pill text-primary py-2 px-4">Read More</a>
 						</div>
 					</div>
 				</div>
@@ -156,7 +156,7 @@
 							<h4 class="mb-4">Fitness coaching </h4>
 							<p class="mb-4">We Provide you with the Support & Motivation You Need to Lead a Healthier & Active Lifestyle.
 							</p>
-							<a href="Fitness coaching.php" class="btn btn-light rounded-pill text-primary py-2 px-4">Read More</a>
+							<a href="<?= base_url() ?>Fitness_Coaching" class="btn btn-light rounded-pill text-primary py-2 px-4">Read More</a>
 						</div>
 					</div>
 				</div>
@@ -169,7 +169,7 @@
 							<h4 class="mb-4"><b>Pet care</b></h4>
 							<p class="mb-4">From Grooming & Boarding to Medical Care & Training, We Offer a Wide Range Of Services.
 							</p>
-							<a href="PetCare.php" class="btn btn-light rounded-pill text-primary py-2 px-4">Read More</a>
+							<a href="<?= base_url() ?>Pet_Care" class="btn btn-light rounded-pill text-primary py-2 px-4">Read More</a>
 						</div>
 					</div>
 				</div>
@@ -182,7 +182,8 @@
 							<h4 class="mb-4">Cleaning Service</h4>
 							<p class="mb-4">Whether you need a one-time deep clean or regular maintenance, Caritask Cleaning Services has you covered.
 							</p>
-							<a href="Cleaning Service.php" class="btn btn-light rounded-pill text-primary py-2 px-4">Read More</a>
+							
+							<a href="<?= base_url() ?>Cleaning_Service" class="btn btn-light rounded-pill text-primary py-2 px-4">Read More</a>
 						</div>
 					</div>
 				</div>

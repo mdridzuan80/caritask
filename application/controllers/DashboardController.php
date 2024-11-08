@@ -13,18 +13,7 @@ class DashboardController extends MY_Controller {
 
 	public function index()
 	{
-		$this->template->set('script', $this->load->view('dashboard/script', NULL, TRUE));
-
-		$data['csrf'] = array(
-			'name' => $this->security->get_csrf_token_name(),
-			'hash' => $this->security->get_csrf_hash()
-		);
-		$data['tasks'] = $this->task->available();
-		
-		if(hasRole(['worker'])) {
-			$data['accepted_tasks'] = $this->task->acceptedBy($this->aauth->user()->email);
-		}
-
+		$data['tasks'] = $this->task->all();
 		$this->template->load('layout/master', 'dashboard/index', $data);
 	}
 }
