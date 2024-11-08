@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Log in</title>
+  <title>Caritask - Services at your Door</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -58,11 +58,30 @@
   </div>
 </div>
 <!-- /.login-box -->
+<hr>
+
 
 <!-- jQuery -->
 <script src="<?= base_url('/assets/plugins/jquery/jquery.min.js') ?>"></script>
 <!-- Bootstrap 4 -->
 <script src="<?= base_url('/assets/plugins/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
 <!-- AdminLTE App -->
-<script src="<?= base_url('/assets/js/adminlte.min.js') ?>
-</html>
+<script src="<?= base_url('/assets/js/adminlte.min.js') ?>"></script>
+
+
+
+
+
+        <footer class="main-footer">
+    <!-- To the right -->
+    <div class="float-right d-none d-sm-inline">
+    <!-- Default to the left -->
+    <span>All rights reserved by <a href="https://caritask.com.my"><i class="fas fa-copyright text-light me-2"></i><b>CariTask</b></a><br>
+    Designed & Maintained By <a href="https://alphabyte.com.my"><b>Alphabyte Technologies (M) Sdn. Bhd.</a></span>
+    <br>
+    </div>
+    
+
+</footer>
+
+ </html>

@@ -17,7 +17,7 @@
         <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
           <!-- User image -->
           <li class="user-header bg-primary">
-            <img src="<?= base_url('/assets/images/user2-160x160.jpg') ?>" class="img-circle elevation-2" alt="User Image">
+            <img src="<?= base_url('/assets/images/user1-128x128.jpg') ?>" class="img-circle elevation-2" alt="User Image">
 
             <p>
 			<?=aauth()->user()->nama?> - <?=aauth()->user()->email?>
