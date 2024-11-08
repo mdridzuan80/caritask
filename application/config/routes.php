@@ -69,6 +69,7 @@ $route['roles']['post'] = 'RolesController/store';
 //$route['tasks']['get'] = 'TasksController/index';
 $route['tasks/create']['get'] = 'TasksController/create';
 $route['tasks/store']['post'] = 'TasksController/store';
+$route['tasks/accept']['post'] = 'TasksController/accept';
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = TRUE;
