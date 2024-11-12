@@ -71,7 +71,7 @@
 				</div>
 				<?php if (!check()) { ?>
 					<a href="<?= site_url('auth') ?>" class="btn btn-light border border-primary rounded-pill text-primary py-2 px-4 me-4">Log In</a>
-					<a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4">Sign Up</a>
+					<a href="<?= site_url('auth/register') ?>" class="btn btn-primary rounded-pill text-white py-2 px-4">Sign Up</a>
 				<?php } ?>
 			</div>
 		</nav>
@@ -182,7 +182,7 @@
 							<h4 class="mb-4">Cleaning Service</h4>
 							<p class="mb-4">Whether you need a one-time deep clean or regular maintenance, Caritask Cleaning Services has you covered.
 							</p>
-							
+
 							<a href="<?= base_url() ?>Cleaning_Service" class="btn btn-light rounded-pill text-primary py-2 px-4">Read More</a>
 						</div>
 					</div>

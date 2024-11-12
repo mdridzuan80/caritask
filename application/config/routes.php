@@ -1,5 +1,5 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 $route['default_controller'] = 'WelcomeController';
 
 $route['users'] = 'UsersController';
@@ -8,6 +8,8 @@ $route['users'] = 'UsersController';
 $route['auth']['get'] = 'AuthController/index';
 $route['auth/logout']['get'] = 'AuthController/logout';
 $route['auth']['post'] = 'AuthController/store';
+$route['auth/register']['get'] = 'AuthController/register';
+$route['auth/register']['post'] = 'AuthController/registered';
 
 $route['dashboard']['get'] = 'DashboardController/index';
 
