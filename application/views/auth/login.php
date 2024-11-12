@@ -55,7 +55,9 @@
 						<!-- /.col -->
 					</div>
 				</form>
-				<?= $this->session->flashdata('response')["message"] ?>
+				<?php if ($this->session->flashdata('response')) { ?>
+					<?= $this->session->flashdata('response')["message"] ?>
+				<?php } ?>
 			</div>
 			<!-- /.login-card-body -->
 		</div>
